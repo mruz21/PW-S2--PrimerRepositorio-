@@ -6,6 +6,35 @@
     <title>Programacion web</title>
 </head>
 <body>
+    <form>
+        
+        <input type="text" value="ingresa xyz"/> <!--value = variable q almacena los ingresado-->
+        <input type="password"/>
+        <input type="checkbox" />
+        <!--tienen q llamarse igual para q se seleccione 1 a la vez-->
+        <input type="radio" name="seleccion_letra" />A
+        <input type="radio" name="seleccion_letra" />B
+        <input type="radio" name="seleccion_letra" />C
+        
+        <button type="button">Click me</button>
+        <!--<input type="button" value="OK"/> ... <input type="submit" value="cancel"/>
+        | NO USAR X ANTIGUO-->
+
+        <!--delizante-->
+        <select>
+            <option value="A">Lunes</option>
+            <option value="B">Martes</option>
+            <option value="C">Miércoles</option>
+        </select>
+
+    </form>
+
+    <!--poner enlace a la pagina q esta en la misma carpeta-->
+    <!--Se puede poner sin protocolo ni hosto (SI ESTA EN EL MISMO SERVER)="/ejemplo/segundo.html"-->
+    <a href="http://127.0.0.1:5500/ejemplo/segundo.html">
+        Link segunda pagina
+    </a>
+
     
     <h1>Titulo 1</h1>
     <h2>Titulo 1.1</h2>
@@ -47,13 +76,32 @@
     <!--target ="_blank" para q abra el enlace en otra pestaña-->
     <a href = "https://google.com">Link Google</a>
 
-    <!--poner enlace a la pagina q esta en la misma carpeta-->
-    <!--Se puede poner sin protocolo ni hosto (SI ESTA EN EL MISMO SERVER)="/ejemplo/segundo.html"-->
-    <a href="http://127.0.0.1:5500/ejemplo/segundo.html">
-        Link segunda pagina
-    </a>
+    
     <h2>imagen</h2>
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Universidad_de_Lima_logo.png"\>
     <img src="/imagenes/logo_ulima.png" \>
+
+    <h2>Tabla</h2>
+    <table>
+        <thead>
+            <tr> <!--tr (solo) = ENCABEZADOS-->
+                <th>ID</th> <!--th=1 columna -->
+                <th>NOMBRE</th>
+                <th>APELLIDO</th>
+            </tr>
+        </thead>
+        <tbody> <!--aca empieza los datos dentro de la tabla-->
+            <tr>
+                <td>1</td>
+                <td>rui</td>
+                <td>k.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>tsukasa</td>
+                <td>t.</td>
+            </tr>
+        </tbody>
+    </table>
 </body>
 </html>
